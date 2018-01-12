@@ -23,6 +23,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
          'dashboard': {label: 'Dashboard', isDefault: true},
          'incidents': {label: 'Incidents'},
          'customers': {label: 'Customers'},
+         'googleMap': {label: 'Maps'},
          'about': {label: 'About'}
        });
       oj.Router.defaults['urlAdapter'] = new oj.Router.urlParamAdapter();
@@ -34,6 +35,8 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
       {name: 'Incidents', id: 'incidents',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'},
       {name: 'Customers', id: 'customers',
+       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},
+      {name: 'Maps', id: 'googleMap',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},
       {name: 'About', id: 'about',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'}
@@ -57,7 +60,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
 
       // Header
       // Application Name used in Branding Area
-      self.appName = ko.observable("App Name");
+      self.appName = ko.observable("Test Project");
       // User Info used in Global Navigation area
       self.userLogin = ko.observable("john.hancock@oracle.com");
 
