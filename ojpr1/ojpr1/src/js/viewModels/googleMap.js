@@ -15,7 +15,7 @@ define(['ojs/ojcore', 'knockout'
     function googleMapContentViewModel() {
         var self = this;
 
-        alert("content model for maps");
+        alert("content model for dummy");
     }
     
     return googleMapContentViewModel;
